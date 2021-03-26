@@ -1,0 +1,12 @@
+SOURCE '/var/lib/cassandra/script/keyspaces/polaris_core_cliente.cql';
+SOURCE '/var/lib/cassandra/script/keyspaces/polaris_core_deliverynote.cql';
+SOURCE '/var/lib/cassandra/script/keyspaces/polaris_core_extra.cql';
+SOURCE '/var/lib/cassandra/script/keyspaces/polaris_core_geographical_distribution.cql';
+SOURCE '/var/lib/cassandra/script/keyspaces/polaris_core_incidence.cql';
+SOURCE '/var/lib/cassandra/script/keyspaces/polaris_core_inventory.cql';
+SOURCE '/var/lib/cassandra/script/keyspaces/polaris_core_location.cql';
+SOURCE '/var/lib/cassandra/script/keyspaces/polaris_core_postman.cql';
+SOURCE '/var/lib/cassandra/script/keyspaces/polaris_core_seguridad.cql';
+SOURCE '/var/lib/cassandra/script/keyspaces/polaris_core_terminal.cql';
+SOURCE '/var/lib/cassandra/script/keyspaces/polaris_core_user.cql';
+SOURCE '/var/lib/cassandra/script/keyspaces/polaris_security_multiplefa.cql';

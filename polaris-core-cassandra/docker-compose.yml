@@ -1,0 +1,27 @@
+version: '3'
+services:
+  seed_node:
+    image: "datastax/dse-server:6.0.15"
+    volumes:
+      - ./data:/var/lib/cassandra
+    environment:
+      - DS_LICENSE=accept
+    ports:
+    - 9042:9042
+    # Allow DSE to lock memory with mlock
+    cap_add:
+    - IPC_LOCK
+    ulimits:
+      memlock: -1
+  node:
+    image: "datastax/dse-server:6.0.15"
+    environment:
+      - DS_LICENSE=accept
+      - SEEDS=seed_node
+    links:
+      - seed_node
+    # Allow DSE to lock memory with mlock
+    cap_add:
+    - IPC_LOCK
+    ulimits:
+      memlock: -1
